@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\GitHub\JavaBH\Task1\com\belhard\lesson1\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-1509799344.index
-3568750754.index

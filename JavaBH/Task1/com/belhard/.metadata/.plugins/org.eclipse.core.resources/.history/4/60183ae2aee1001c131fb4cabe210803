@@ -1,0 +1,61 @@
+package TasksStar;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Task6D {
+
+	public static void main(String[] args) {
+		    Scanner in = new Scanner(System.in);
+			
+			System.out.print("Enter numbers: ");
+			String numbers = in.nextLine();
+			String[] num = numbers.split(" "); //дробим строку на подстроки в коллекции по разделителю (пробел)
+			ArrayList<Integer> numbersAfter = new ArrayList<Integer>();
+			ArrayList<Integer> num3 = new ArrayList<Integer>();
+			int countNum = 0;//пременная для хранения колличества знаков в числе
+	 
+			for (String nums : num) {
+				countNum = 0;
+				if (isNumeric(nums)) {//Проверяем является ли массив именно числом
+					for (int i = 0; i < nums.length(); i++) {
+						countNum++;
+					}
+					if (countNum == 3) {
+						//countNum = Integer.parseInt(nums); //для сохранения памяти перезаписываю переменную для временного хранения 3-х значного числа
+						String[] num3int = nums.split("");//Дпробим число на 3 знака
+						countNum = 0;
+						for (String num3ints : num3int) {
+							num3.add(Integer.parseInt(num3ints));//Добавляем в массив все знаки 3-х значного числа
+						}
+						
+						
+							if (num3.get(0) == num3.get(1)) {
+								if (num3.get(0) == num3.get(2)) {
+									if (num3.get(1) == num3.get(2)) {
+										numbersAfter.add(Integer.parseInt(nums));//Вставляем 3-х значные числа, в которых не повторяются знаки в отдельный массив
+									}
+								}
+							}
+						
+					}
+					
+				}
+	
+			}
+			for (Integer numbersAfters : numbersAfter) {
+				System.out.print("All three-digit numbers with no identical digits in the decimal notation: " + numbersAfters);
+			}
+			
+		in.close();
+	}
+	
+	 public static boolean isNumeric(String str) {
+	        try {
+	            Double.parseDouble(str);
+	            return true;
+	        } catch (NumberFormatException e) {
+	            return false;
+	        }
+	    }
+
+}

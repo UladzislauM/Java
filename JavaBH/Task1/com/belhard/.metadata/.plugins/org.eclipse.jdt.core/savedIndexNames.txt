@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\GitHub\Java\JavaBH\Task1\com\belhard\.metadata\.plugins\org.eclipse.jdt.core
+1566039803.index

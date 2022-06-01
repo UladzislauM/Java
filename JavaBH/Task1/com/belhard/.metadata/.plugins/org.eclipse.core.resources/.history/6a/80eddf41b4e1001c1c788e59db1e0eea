@@ -1,0 +1,19 @@
+package TasksStar;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Task6E {
+
+	public static void main(String[] args) {
+		 Scanner in = new Scanner(System.in);
+			
+			System.out.print("Enter numbers: ");
+			String numbers = in.nextLine();
+			String[] num = numbers.split(" "); //дробим строку на подстроки в коллекции по разделителю (пробел)
+			ArrayList<Integer> numbersAfter = new ArrayList<Integer>();
+			
+			in.close();//Закрываем поток считывающий данные
+
+	}
+
+}

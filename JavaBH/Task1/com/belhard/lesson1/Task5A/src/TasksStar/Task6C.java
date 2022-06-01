@@ -1,0 +1,47 @@
+package TasksStar;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Task6C {
+
+	public static void main(String[] args) {
+		 Scanner in = new Scanner(System.in);
+			
+			System.out.print("Enter n integers: ");
+			String numbers = in.nextLine();
+			String[] num = numbers.split(" ");
+			ArrayList<Integer> numbersAfter = new ArrayList<Integer>();
+	 
+			for (String nums : num) {
+				if (isNumeric(nums)) {
+					numbersAfter.add(Integer.parseInt(nums));	
+				}
+			}
+			
+			ArrayList<Integer> divisibleNums = new ArrayList<Integer>();
+			
+			for (int numbersAfters : numbersAfter) {
+				if (numbersAfters % 3 == 0 || numbersAfters % 9 == 0) {
+					divisibleNums.add(numbersAfters);
+				}
+			}
+			
+			System.out.print("Numbers that are divisible by 3 or by 9: ");
+			for (int divisibleNumss : divisibleNums) {
+				System.out.print(divisibleNumss + ", ");
+			}
+
+			in.close();
+			
+	}
+	
+	 public static boolean isNumeric(String str) {
+	        try {
+	            Double.parseDouble(str);
+	            return true;
+	        } catch (NumberFormatException e) {
+	            return false;
+	        }
+	    }
+	 
+}

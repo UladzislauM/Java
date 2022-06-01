@@ -1,0 +1,16 @@
+package TasksStar;
+import java.util.Scanner;
+
+public class Task5F {
+
+	public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+		
+		String correntPass = "qw34";
+		System.out.print("Input password: ");
+		String password = in.nextLine();
+
+		in.close();
+	}
+
+}

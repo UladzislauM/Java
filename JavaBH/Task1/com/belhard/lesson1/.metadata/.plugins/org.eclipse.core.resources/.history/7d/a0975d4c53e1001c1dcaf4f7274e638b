@@ -1,0 +1,15 @@
+package TasksStar;
+import java.util.Scanner;
+
+public class Task6A {
+
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter n integers: ");
+		int number1 = in.nextInt();
+		System.out.print(number1);
+		in.close();
+	}
+
+}

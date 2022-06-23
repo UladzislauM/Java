@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="tasks1-4(1)"/>
+	<classpathentry kind="src" path="recursiveFunctions"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

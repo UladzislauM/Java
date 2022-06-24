@@ -7,6 +7,8 @@ public class NumberSearch {
 		boolean [] simpleNumbers = new boolean [numbers];
 		simpleNumbers[0] = simpleNumbers [1] = true;
 		
+		
+		
 		for (int i = 2; i < simpleNumbers.length; i++) {
 			if (!simpleNumbers[i]) {
 				for (int j = i; j < simpleNumbers.length; j++) {
@@ -25,5 +27,7 @@ public class NumberSearch {
 		}
 
 	}
+	
+//	static int 
 
 }

@@ -1,4 +1,4 @@
-package task1;
+package task1_3;
 
 public class NaturalNumber {
 

@@ -1,15 +1,16 @@
 package modelsCars;
 
+import details.Engine;
+import professions.DriverName;
 import vehicles.Car;
 
 public class Lorry extends Car{
 
 	private int loadCapacityOfTheBody;
 	
-	public Lorry(String carBrand, String carClass, int weight, String nameDriver,
-			int drivingExperience, int power, String manufacturer, int loadCapacityOfTheBody) {
-		super(carBrand, carClass, weight, nameDriver, drivingExperience, power, manufacturer);
-
+	public Lorry(String carBrand, String carClass, int weight, DriverName driver, Engine engine,
+			int loadCapacityOfTheBody) {
+		super(carBrand, carClass, weight, driver, engine);
 		this.loadCapacityOfTheBody = loadCapacityOfTheBody;
 	}
 

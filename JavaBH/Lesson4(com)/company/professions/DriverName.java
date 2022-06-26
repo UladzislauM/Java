@@ -1,11 +1,11 @@
 package professions;
 
-public class Driver {
+public class DriverName {
 	
 	private String name;
 	private int drivingExperience;
 	
-	public Driver(String name, int drivingExperience) {
+	public DriverName(String name, int drivingExperience) {
 		this.name = name;
 		this.drivingExperience = drivingExperience;
 	}

@@ -1,23 +1,22 @@
 package vehicles;
 
 import details.Engine;
-import professions.Driver;
+import professions.DriverName;
 
 public class Car{
 
 	private String carBrand;
 	private String carClass;
 	private int weight;
-	private Driver driver;
+	private DriverName driver;
 	private Engine engine;
 
-	public Car(String carBrand, String carClass, int weight, String nameDriver, 
-			int drivingExperience, int power, String manufacturer) {
+	public Car(String carBrand, String carClass, int weight, DriverName driver, Engine engine) {
 		this.carBrand = carBrand;
 		this.carClass = carClass;
 		this.weight = weight;
-		driver = new Driver(nameDriver, drivingExperience);
-		engine = new Engine(power, manufacturer);
+		this.driver = driver;
+		this.engine = engine;
 
 	}
 	
@@ -42,10 +41,10 @@ public class Car{
 		this.weight = weight;
 	}
 	
-	public Driver getDriver() {
+	public DriverName getDriver() {
 		return driver;
 	}
-	public void setDriver(Driver driver) {
+	public void setDriver(DriverName driver) {
 		this.driver = driver;
 	}
 	

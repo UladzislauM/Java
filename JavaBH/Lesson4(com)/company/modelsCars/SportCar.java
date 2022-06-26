@@ -1,17 +1,18 @@
 package modelsCars;
 
+import details.Engine;
+import professions.DriverName;
 import vehicles.Car;
 
 public class SportCar extends Car {
 
 	private int maxSpeed;
 	
-	public SportCar(String carBrand, String carClass, int weight, String nameDriver, int drivingExperience, int power,
-			String manufacturer, int maxSpeed) {
-		super(carBrand, carClass, weight, nameDriver, drivingExperience, power, manufacturer);
+	public SportCar(String carBrand, String carClass, int weight, DriverName driver, Engine engine, int maxSpeed) {
+		super(carBrand, carClass, weight, driver, engine);
 		this.maxSpeed = maxSpeed;
 	}
-
+	
 	public int getMaxSpeed() {
 		return maxSpeed;
 	}

@@ -6,7 +6,7 @@ import animals.Horse;
 import base.Animal;
 import humans.Veterinarian;
 
-public class main {
+public class Main2 {
 
 	public static void main(String[] args) {
 		

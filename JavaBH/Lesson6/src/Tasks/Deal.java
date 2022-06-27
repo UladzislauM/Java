@@ -1,10 +1,18 @@
 package Tasks;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Deal {
 
 	public static void main(String[] args) {
-		int nunberPiples = 3;
-		String numberCardsPiples[][] = new String [nunberPiples][5];
+
+		System.out.println("Enter number of peoples: ");
+		Scanner scanner = new Scanner(System.in);
+		int numberPipes = scanner.nextInt();
+		scanner.close();
+
+		String numberCardsPiples[][] = new String [numberPipes][5];
 		
 		String[] suits = {"Peak", "Tambourine", "Hearts", "Clubs"};
 		 
@@ -70,7 +78,7 @@ public class Deal {
 	        }
 		}
 
-		for (int i = 0; i < nunberPiples; i++) {
+		for (int i = 0; i < numberPipes; i++) {
 			for (int j = 0; j < 5; j++) {
 				numberCardsPiples[i][j] = numbersCards[i][j];
 				System.out.println(numberCardsPiples[i][j]);

@@ -12,18 +12,42 @@ public class TaskReplace {
 //    Напишите программу на Java для переворачивания строки, изменив расположение символов в строке задом наперёд без использования встроенных в String функций (с помощью массивов символов).
 
     public static void main(String[] args) {
-        String changeString = "We are playing with java";
+        String changeString = "We are , playing with java !";
 //        String changeString = "Wwm rm et g";
         System.out.println("Before replace: "+ changeString);
 
 //        dellSpaces(changeString);
 
-        repeatLetter(changeString);
+//        repeatLetter(changeString);
+
+//        multWords(changeString);
+
+        reverseString(changeString);
+    }
+
+    static void reverseString (String stringWords){
+        String[] arrWords = stringWords.split("");
+        int iterator = arrWords.length - 1;
+        String revString = "";
+
+         for (int i  = 0; i< arrWords.length; i++) {
+            if(i < arrWords.length / 2 - 1) {
+                String buffer = "";
+                buffer = arrWords[i];
+                arrWords[i] = arrWords[iterator];
+                arrWords[iterator] = buffer;
+                iterator--;
+            }
+            revString += arrWords[i];
+        }
+        System.out.println(revString);
 
     }
 
     static void multWords (String stringWords){
-
+        String[] arrWords = stringWords.split("\\s*(\\s|,|!|\\.)\\s*");
+        System.out.println("Number of words per line - "
+                + arrWords.length);
     }
 
     static void repeatLetter(String replString) {

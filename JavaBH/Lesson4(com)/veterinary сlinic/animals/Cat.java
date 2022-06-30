@@ -10,11 +10,10 @@ public class Cat extends Animal {
 	private int age;
 	
 	public Cat(String name, String color, int age, String food, String location) {
+		super(food, location);
 		this.name = name;
 		this.color = color;
 		this.age = age;
-		this.setFood(food);
-		this.setLocation(location);
 	}
 
 	@Override

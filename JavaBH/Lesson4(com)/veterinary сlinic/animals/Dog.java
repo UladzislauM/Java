@@ -10,11 +10,10 @@ public class Dog extends Animal{
 	private int heightAtTheWithers;
 	
 	public Dog(String name, String breed, int heightAtTheWithers, String food, String location) {
+		super(food, location);
 		this.name = name;
 		this.breed = breed;
 		this.heightAtTheWithers = heightAtTheWithers;
-		this.setFood(food);
-		this.setLocation(location);
 	}
 	
 	public String getBreed() {

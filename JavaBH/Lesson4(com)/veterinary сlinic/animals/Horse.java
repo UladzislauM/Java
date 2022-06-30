@@ -10,12 +10,10 @@ public class Horse extends Animal {
 	private int weight;
 	
 	public Horse(String name, boolean manual, int weight, String food, String location) {
-		super();
+		super(food, location);
 		this.name = name;
 		this.manual = manual;
 		this.weight = weight;
-		this.setFood(food);
-		this.setLocation(location);
 	}
 	
 	public String getName() {

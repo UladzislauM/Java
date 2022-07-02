@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
+<<<<<<< HEAD
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/JavaBH/Lesson4(com)/company" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/JavaBH/Lesson4(com)/veterinary сlinic" isTestSource="false" />
@@ -8,6 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/JavaBH/Lesson6/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/JavaBH/Lesson7/src" isTestSource="false" />
     </content>
+=======
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+>>>>>>> Lesson8
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -16,16 +16,24 @@ public class TaskReplace {
 
     public static void main(String[] args) {
         String changeString = "We are , playing with java !";
-//        String changeString = "Wwm rm et g";
+
         System.out.println("Before replace: "+ changeString);
 
-//        dellSpaces(changeString);
+        dellSpaces(changeString);
 
-//        repeatLetter(changeString);
+        repeatLetter(changeString);
 
-//        multWords(changeString);
+        multWords(changeString);
 
         reverseString(changeString);
+
+        reverseStringReverse(changeString);
+    }
+
+    static void reverseStringReverse (String stringWords) {
+    StringBuffer stringBuffer = new StringBuffer(stringWords);
+    stringBuffer.reverse();
+        System.out.println(stringBuffer);
     }
 
     static void reverseString (String stringWords){

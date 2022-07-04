@@ -13,7 +13,7 @@ public class Tasks {
         long start = System.currentTimeMillis();//получение стартового значения в миллисекундах
         System.out.println("Data Start ArrayList: " + date.toString());
 
-        randSerchArr(arrayList);
+        randSerch(arrayList);
 
         long end = System.currentTimeMillis();//получение конечного значения в миллисекундах
         long diff = end - start;
@@ -23,7 +23,7 @@ public class Tasks {
         long start2 = System.currentTimeMillis();
         System.out.println("Data Start linkedList: " + date.toString());
 
-        randSerchLink(linkedList);
+        randSerch(linkedList);
 
         long end2 = System.currentTimeMillis();
         long diff2 = end2 - start2;
@@ -31,17 +31,7 @@ public class Tasks {
                 + "\nTime run program linkedList: " + diff2);
 
     }
-    static void randSerchArr (ArrayList<Integer> list){
-        Random rand = new Random();//создаем экземпляр генератора случайных чисел
-
-        int numbs = 0;
-
-        for (int iCount = 0; iCount < 1000; iCount++) {
-           numbs += list.get(rand.nextInt(999_999));
-        }
-
-        System.out.println(numbs);
-    }static void randSerchLink (LinkedList<Integer> list){
+    static void randSerch (List<Integer> list){
         Random rand = new Random();//создаем экземпляр генератора случайных чисел
 
         int numbs = 0;

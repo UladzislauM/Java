@@ -3,7 +3,7 @@ import util.LoginUtil;
 public class main {
     public static void main(String[] args) {
 
-        String login = "vladвлад";
+        String login = "Vlad Fd";
         String password = "123qwe";
         String confirmPassword = "123qwe";
 

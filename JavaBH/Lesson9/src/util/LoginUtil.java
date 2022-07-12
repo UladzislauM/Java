@@ -14,34 +14,35 @@ public class LoginUtil {
             checkPassword(password, confirmPassword);
             return true;
 
-        } catch (WrongLoginException | WrongPasswordException e) {//специально сделал ошибку в слове Exception, так как эта проверка уже есть
+        } catch (WrongLoginException | WrongPasswordException e) {
             System.out.println(e.getMessage());
             return false;
         }
     }
 
     private static boolean checkLogin(String login) throws WrongLoginException {
-        Pattern patternLogin = Pattern.compile("[a-zA-Z]");
-        Matcher machLogin = patternLogin.matcher(login);
+//        Pattern patternLogin = Pattern.compile("[a-zA-Z]");
+//        Matcher machLogin = patternLogin.matcher(login);
 
-        if (machLogin.find() && login.length() < 20) {
+        if (login.matches("^[a-zA-Z0-9._]+$")
+                && !login.matches(" ") && login.length() < 20) {
             return true;
+        }else {
+            throw new WrongLoginException();
         }
-
-        throw new WrongLoginException();
     }
 
         private static boolean checkPassword(String password, String confirmPassword)
                 throws WrongPasswordException {
-            Pattern patternLogin = Pattern.compile("a-zA-Z._\\d\\S");
-            Matcher machLogin = patternLogin.matcher(password);
+//            Pattern patternLogin = Pattern.compile("a-zA-Z._\\d\\S");
+//            Matcher machLogin = patternLogin.matcher(password);
 
-            if (!machLogin.find() && password.length() > 20
-                    && !password.equals(confirmPassword)){
-                throw new WrongPasswordException();
-            }
+            if (password.matches("^[a-zA-Z0-9._]+$")
+                    && !password.matches(" ") && password.length() < 20
+                    && password.equals(confirmPassword)){
                 return true;
-
+            }
+            throw new WrongPasswordException();
         }
     }
 

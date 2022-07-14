@@ -1999,7 +1999,7 @@
   <commands xmi:id="_Gl2KPPNvEeyDEuqdnVQqjQ" elementId="org.eclipse.jdt.ui.edit.text.java.source.quickMenu" commandName="Show Source Quick Menu" description="Shows the source quick menu" category="_GltATPNvEeyDEuqdnVQqjQ"/>
   <commands xmi:id="_Gl2KPfNvEeyDEuqdnVQqjQ" elementId="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.project" commandName="Declaration in Project" description="Search for declarations of the selected element in the enclosing project" category="_GltARPNvEeyDEuqdnVQqjQ"/>
   <commands xmi:id="_Gl2KPvNvEeyDEuqdnVQqjQ" elementId="org.eclipse.ui.edit.text.scroll.lineDown" commandName="Scroll Line Down" description="Scroll down one line of text" category="_GltAN_NvEeyDEuqdnVQqjQ"/>
-  <commands xmi:id="_Gl2KP_NvEeyDEuqdnVQqjQ" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle Main Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_GltAP_NvEeyDEuqdnVQqjQ"/>
+  <commands xmi:id="_Gl2KP_NvEeyDEuqdnVQqjQ" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle MainLes10 Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_GltAP_NvEeyDEuqdnVQqjQ"/>
   <commands xmi:id="_Gl2KQPNvEeyDEuqdnVQqjQ" elementId="org.eclipse.egit.ui.RepositoriesViewImportProjects" commandName="Import Projects..." description="Import or create in local Git repository" category="_GltASPNvEeyDEuqdnVQqjQ"/>
   <commands xmi:id="_Gl2KQfNvEeyDEuqdnVQqjQ" elementId="org.eclipse.ui.navigate.openResource" commandName="Open Resource" description="Open an editor on a particular resource" category="_GltAOPNvEeyDEuqdnVQqjQ">
     <parameters xmi:id="_Gl2KQvNvEeyDEuqdnVQqjQ" elementId="filePath" name="File Path" typeId="org.eclipse.ui.ide.resourcePath"/>
